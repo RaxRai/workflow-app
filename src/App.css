@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  min-width: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+}
+
+.canvas {
+  height: 600px;
+  width: 75%;
+  border: 1px solid black;
+}
+.toolbox {
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+  width: 15%;
+  border: 1px solid black;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+}
+.toolbox > div {
+  display: flex !important;
+  border-radius: 10px !important;
+  height: 50px !important;
+  width: 100% !important;
+  margin: 5px !important;
+  justify-content: center;
+  align-items: center;
+}
+.toolbox > div:hover {
+  background-color: rgb(48, 23, 23);
+  color: white;
+  cursor: grab;
+}
